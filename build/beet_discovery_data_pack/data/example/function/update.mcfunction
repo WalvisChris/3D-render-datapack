@@ -1,4 +1,4 @@
-scoreboard players add @p timer 1
+scoreboard players add @p[scores={timer=..360}] timer 1
 execute if score @p timer matches 0 run function example:update/nested_execute_0
 execute if score @p timer matches 1 run function example:update/nested_execute_1
 execute if score @p timer matches 2 run function example:update/nested_execute_2
@@ -360,3 +360,4 @@ execute if score @p timer matches 357 run function example:update/nested_execute
 execute if score @p timer matches 358 run function example:update/nested_execute_358
 execute if score @p timer matches 359 run function example:update/nested_execute_359
 execute if score @p timer matches 360 run scoreboard players set @p timer 0
+execute if score @p timer matches 361 run function example:update/nested_execute_360
